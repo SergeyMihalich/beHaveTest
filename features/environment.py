@@ -1,4 +1,5 @@
 from selenium import webdriver
+from locators import google_loc
 
 
 def before_teg(context, tag): ...
@@ -6,8 +7,7 @@ def before_teg(context, tag): ...
 
 def before_all(context):
     context.driver = webdriver.Chrome()
-    # r"C:\tools\chromedriver.exe"
-
+    context.locators = google_loc
 
 def before_feature(context, feature): ...
 

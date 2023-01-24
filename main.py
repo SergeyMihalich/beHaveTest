@@ -11,6 +11,7 @@ from selenium.webdriver.common.keys import Keys
 url = 'http://google.ru'
 driver = webdriver.Chrome()
 
+
 def get_search_field():
     element = driver.find_element_by_css_selector('.gLFyf')
     element.send_keys('что такое хорошо и что такое плохо')
